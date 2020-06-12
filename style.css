@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    border: 1px solid blue;
+}
+.row{
+    border: 1px solid yellow;    
+}
+.form-group{
+    display:inline-flexbox;
+    margin-right: 10px;
+    text-align: left;    
+}
+table {
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+table .thead-dark{
+    text-align: center;
+}
