@@ -4,22 +4,34 @@ body{
     box-sizing: border-box;
 }
 .container{
-    border: 1px solid blue;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    text-align: center;
 }
 .row{
-    border: 1px solid yellow;    
-}
-.form-group{
-    display:inline-flexbox;
-    margin-right: 10px;
-    text-align: left;    
+    /* border: 1px solid yellow;     */
+    margin: 0;
+    padding: 0;
 }
 table {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     table-layout: fixed;
     word-wrap: break-word;
+    font-size: 11px;
 }
 table .thead-dark{
     text-align: center;
+}
+input.checkbox{
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+button{
+    display: block;
+    text-align: center;
+    background-color: rgb(0, 255, 213);
 }

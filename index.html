@@ -10,24 +10,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>CHANGE OVER PREPARATION</title>
 </head>
 
 <body>
     <div class="container">
-        <form action="https://script.google.com/macros/s/AKfycbxsURpt1GP4YDNnfv_ot4BXF1t1B6OezlJHehBGqA7OA2UCUaM/exec" method="get">
-            <h2>Header</h2>
+        <form action="https://script.google.com/macros/s/AKfycbxsURpt1GP4YDNnfv_ot4BXF1t1B6OezlJHehBGqA7OA2UCUaM/exec"
+            method="get">
+            <h2>CHANGE OVER PREPARATION</h2>
             <div class="row">
                 <div class="col">
                     <div class="form-group">
                         <label for="">Line</label>
-                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                        <input type="text" class="form-control" name="Line" id="" aria-describedby="helpId"
+                            placeholder="">
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-group">
                         <label for="">Style</label>
-                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                        <input type="text" class="form-control" name="Style" id="" aria-describedby="helpId"
+                            placeholder="">
                     </div>
                 </div>
             </div>
@@ -35,20 +38,20 @@
                 <div class="col">
                     <div class="form-group">
                         <label for="">Date Changeover</label>
-                        <input type="date" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                        <input type="date" class="form-control" name="Date" id="" aria-describedby="helpId"
+                            placeholder="">
                     </div>
                 </div>
                 <div class="col">
                     <label class="label" for="">Type of Changeover</label>
                     <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="defaultUnchecked"
-                            name="defaultExampleRadios">
+                        <input type="radio" class="custom-control-input" id="defaultUnchecked" name="New style">
                         <label class="custom-control-label" for="defaultUnchecked">New style</label>
                     </div>
 
                     <!-- Default checked -->
                     <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios"
+                        <input type="radio" class="custom-control-input" id="defaultChecked" name="Repeated style"
                             checked>
                         <label class="custom-control-label" for="defaultChecked">Repeat style</label>
                     </div>
@@ -78,49 +81,59 @@
                 <tbody>
 
                     <tr>
-                        <td scope="row" rowspan="2">IE</td>
+                        <td scope="row" rowspan="2" class="checkbox"
+                            style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;">IE
+                        </td>
                         <td scope="row" style="height: 150px;">
-                            <input type="checkbox" name="" id="btn_prelayout" value="Y">
+                            <input type="checkbox" class="checkbox" name="Pre-line balancing" id="btn_prebal" value="Y">
                             <label for="">Pre-line balancing</label>
                         </td>
                         <td scope="row" style="height: 150px;">
-                            <input type="checkbox" name="" id="btn_prelayout" value="Y">
+                            <input type="checkbox" class="checkbox" name="Prepare layout" id="btn_prelayout" value="Y">
                             <label for="">Prepare layout</label>
                         </td>
                         <td scope="row" style="height: 150px;">
-                            <input type="checkbox" name="" id="btn_prelayout" value="Y">
+                            <input type="checkbox" class="checkbox" name="Give to technician" id="btn_givetotech" value="Y">
                             <label for="">Give to technician</label>
                         </td>
                         <td scope="row" style="height: 150px;">
-                            <input type="checkbox" name="" id="btn_prelayout" value="Y">
+                            <input type="checkbox" class="checkbox" name="Give to Mechanic" id="btn_givetomec" value="Y">
                             <label for="">Give to Mechanic</label>
-                        </td>                        
+                        </td>
                         <td contenteditable="true" rowspan="2"></td>
                     </tr>
                     <tr>
                         <td scope="row" style="height: 150px;">
-                            <input type="checkbox" name="" id="btn_prelayout" value="Y">
-                            <label for="">Pre-line balancing</label>
+                            <input type="checkbox" class="checkbox" name="Give to Leader" id="btn_givetolead" value="Y">
+                            <label for="">Give to Leader</label>
                         </td>
                         <td scope="row" style="height: 150px;">
-                            <input type="checkbox" name="" id="btn_prelayout" value="Y">
-                            <label for="">Pre-line balancing</label>
+                            <!-- <input type="checkbox" name="" id="btn_prelayout" value="Y">
+                            <label for="">Pre-line balancing</label> -->
                         </td>
                         <td scope="row" style="height: 150px;">
-                            <input type="checkbox" name="" id="btn_prelayout" value="Y">
-                            <label for="">Pre-line balancing</label>
+                            <!-- <input type="checkbox" name="" id="btn_prelayout" value="Y">
+                            <label for="">Pre-line balancing</label> -->
                         </td>
                         <td scope="row" style="height: 150px;">
-                            <input type="checkbox" name="" id="btn_prelayout" value="Y">
-                            <label for="">Pre-line balancing</label>
+                            <!-- <input type="checkbox" name="" id="btn_prelayout" value="Y">
+                            <label for="">Pre-line balancing</label> -->
                         </td>
                     </tr>
+
+
+
 
                 </tbody>
             </table>
 
-
-            <button type="submit">Sent</button>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button type="submit" id="btn">Sent</button>
+                </div>
+                
+            </div>
+            
 
         </form>
 
@@ -141,6 +154,17 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script>
+        document.getElementById('btn_prebal').onclick = function () {
+            // access properties using this keyword
+            if (this.checked) {
+                // if checked ...
+                return this.value
+                // alert(this.value);
+            } else {
+                // if not checked ...               
+                return document.getElementById("btn_prebal").value = "N"
+            }
+        };
         document.getElementById('btn_prelayout').onclick = function () {
             // access properties using this keyword
             if (this.checked) {
@@ -148,12 +172,46 @@
                 return this.value
                 // alert(this.value);
             } else {
-                // if not checked ...
-                
+                // if not checked ...   
+                return this.value = "N"
             }
-            console.log(this.value)
         };
-        
+        document.getElementById('btn_givetotech').onclick = function () {
+            // access properties using this keyword
+            if (this.checked) {
+                // if checked ...
+                return this.value
+                // alert(this.value);
+            } else {
+                // if not checked ...   
+                return this.value = "N"
+            }
+
+        };
+        document.getElementById('btn_givetomec').onclick = function () {
+            // access properties using this keyword
+            if (this.checked) {
+                // if checked ...
+                return this.value
+                // alert(this.value);
+            } else {
+                // if not checked ...  
+                return this.value = "N"
+            }
+
+        };
+        document.getElementById('btn_givetolead').onclick = function () {
+            // access properties using this keyword
+            if (this.checked) {
+                // if checked ...
+                return this.value
+                // alert(this.value);
+            } else {
+                // if not checked ...    
+                return this.value = "N"
+            }
+        }
+
     </script>
 </body>
 
