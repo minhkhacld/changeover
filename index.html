@@ -19,6 +19,7 @@
             method="get">
             <h2>CHANGE OVER PREPARATION</h2>
             <div class="row">
+                <!-- -------------- Google sheet Colume 1 ---------------------->
                 <div class="col">
                     <div class="form-group">
                         <label for="">Line</label>
@@ -27,6 +28,7 @@
                     </div>
                 </div>
                 <div class="col">
+                     <!-- -------------- Google sheet Colume 2 ---------------------->
                     <div class="form-group">
                         <label for="">Style</label>
                         <input type="text" class="form-control" name="Style" id="" aria-describedby="helpId"
@@ -34,6 +36,7 @@
                     </div>
                 </div>
                 <div class="col">
+                     <!-- -------------- Google sheet Colume 3 ---------------------->
                     <div class="form-group">
                         <label for="">Factory</label>
                         <select class="form-control" name="Factory" id="" required>
@@ -46,6 +49,7 @@
             </div>
             <div class="row">
                 <div class="col">
+                     <!-- -------------- Google sheet Colume 4 ---------------------->
                     <div class="form-group">
                         <label for="">Date Changeover</label>
                         <input type="date" class="form-control" name="Date" id="" aria-describedby="helpId"
@@ -53,26 +57,29 @@
                     </div>
                 </div>
                 <div class="col">
+                     <!-- -------------- Google sheet Colume 5 ---------------------->
                     <label class="label" for="">Type of Changeover</label>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="defaultUnchecked" name="New style">
-                        <label class="custom-control-label" for="defaultUnchecked">New style</label>
+                    <div class="form-check">
+                        <label class="form-check-label" for="radio1">
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="New"
+                                checked>Mã mới/New style
+                        </label>
                     </div>
-
-                    <!-- Default checked -->
-                    <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input" id="defaultChecked" name="Repeated style"
-                            checked>
-                        <label class="custom-control-label" for="defaultChecked">Repeat style</label>
+                    <div class="form-check">
+                        <label class="form-check-label" for="radio2">
+                            <input type="radio" class="form-check-input" id="radio2" name="optradio"
+                                value="Repeat">Mã cũ/Repeated style
+                        </label>
                     </div>
                 </div>
             </div>
+
             <!-- Main contain -->
             <table class="table table-bordered">
                 <thead class="thead-dark">
                     <tr>
-                        <th class="" scope="col" style="width: 15%;">Dept</th>
-                        <th class="" scope="col" colspan="4" style="width: 55%;">Check List</th>
+                        <th class="" scope="col" style="width: 17%;">Dept</th>
+                        <th class="" scope="col" colspan="4" style="width: 53%;">Check List</th>
                         <th class="" scope="col" style="width: 30%;">Remark</th>
 
                     </tr>
@@ -83,9 +90,11 @@
                         <td scope="row" rowspan="3" class="checkbox"
                             style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;">IE
                         </td>
+                         <!-- -------------- Google sheet Colume 6 ---------------------->
                         <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Pre-line balancing" id="btn_prebal" value="Y">
                             <label for="">Cân bằng chuyền/Pre-line balancing</label>
+                             <!-- -------------- Google sheet Colume 7 ---------------------->
                         <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Prepare layout" id="btn_prelayout" value="Y">
                             <label for="">Prepare layout</label>
@@ -94,11 +103,13 @@
                         <td contenteditable="true" rowspan="3"></td>
                     </tr>
                     <tr>
+                         <!-- -------------- Google sheet Colume 8 ---------------------->
                         <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Give to technician" id="btn_givetotech"
                                 value="Y">
                             <label for="">Gửi layout cho Kỹ thuật/Give to technician</label>
                         </td>
+                         <!-- -------------- Google sheet Colume 9 ---------------------->
                         <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Give to Mechanic" id="btn_givetomec"
                                 value="Y">
@@ -106,89 +117,98 @@
                         </td>
                     </tr>
                     <tr>
+                         <!-- -------------- Google sheet Colume 10 ---------------------->
                         <td scope="row" colspan="4">
                             <input type="checkbox" class="checkbox" name="Give to Leader" id="btn_givetolead" value="Y">
                             <label for="">Gửi layout cho Tổ trưởng/Give to Leader</label>
                         </td>
-
                     </tr>
                     <!-- -------------------------------------------------------- -->
                     <!-- TECHNICAL ------------------------------------------------------------------->
                     <tr>
                         <td scope="row" rowspan="4" class="checkbox"
                             style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;">
-                            Technical
+                            Tech
                         </td>
+                         <!-- -------------- Google sheet Colume 11 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Pre-line balancing" id="btn_prebal" value="Y">
+                            <input type="checkbox" class="checkbox" name="Lab" id="tech_lab" value="Y">
                             <label for="">Lab</label>
                         </td>
+                         <!-- -------------- Google sheet Colume 12 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Prepare layout" id="btn_prelayout" value="Y">
+                            <input type="checkbox" class="checkbox" name="PP meeting" id="tech_ppm" value="Y">
                             <label for="">PP meeting</label>
                         </td>
-
                         <td contenteditable="true" rowspan="4"></td>
                     </tr>
                     <tr>
+                         <!-- -------------- Google sheet Colume 13 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Give to technician" id="btn_givetotech"
+                            <input type="checkbox" class="checkbox" name="Tech sample" id="tech_sample"
                                 value="Y">
                             <label for="">Mẫu kỹ thuật/Technical sample</label>
                         </td>
+                         <!-- -------------- Google sheet Colume 14 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Give to Mechanic" id="btn_givetomec"
+                            <input type="checkbox" class="checkbox" name="Paper template" id="tech_papertemplate"
                                 value="Y">
                             <label for="">Rập giấy/Prepare paper template</label>
                         </td>
                     </tr>
                     <tr>
+                         <!-- -------------- Google sheet Colume 15 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Give to Leader" id="btn_givetolead" value="Y">
+                            <input type="checkbox" class="checkbox" name="Plastic template" id="tech_plastictemplate" value="Y">
                             <label for="">Rập mica/Plastic template</label>
                         </td>
+                         <!-- -------------- Google sheet Colume 16 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Give to Leader" id="btn_givetolead" value="Y">
-                            <label for="">Tài liệu kỹ thuật</label>
+                            <input type="checkbox" class="checkbox" name="Tech docs" id="tech_docs" value="Y">
+                            <label for="">Tài liệu kỹ thuật/Techincal docs</label>
                         </td>
                     </tr>
                     <tr>
+                         <!-- -------------- Google sheet Colume 17 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Give to Leader" id="btn_givetolead" value="Y">
+                            <input type="checkbox" class="checkbox" name="Training" id="tech_training" value="Y">
                             <label for="">Đào tạo công nhân công đoạn khó/Traning for critial operation</label>
                         </td>
+                         <!-- -------------- Google sheet Colume 18 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Give to Leader" id="btn_givetolead" value="Y">
+                            <input type="checkbox" class="checkbox" name="Sew old style" id="tech_oldstyle" value="Y">
                             <label for="">CN may hàng cũ/Sewers sew old style</label>
                         </td>
                     </tr>
-
                     <!-- -------------------------------------------------------- -->
                     <!-- MECHANIC------------------------------------------------------------------->
                     <tr>
                         <td scope="row" rowspan="2" class="checkbox"
                             style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;">
-                            Mechanic
+                            Mech
                         </td>
+                         <!-- -------------- Google sheet Colume 19 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Pre-line balancing" id="btn_prebal" value="Y">
+                            <input type="checkbox" class="checkbox" name="Prepare special" id="mech_special" value="Y">
                             <label for="">Máy đặc biệt/Special Machine</label>
                         </td>
+                         <!-- -------------- Google sheet Colume 20 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Prepare layout" id="btn_prelayout" value="Y">
+                            <input type="checkbox" class="checkbox" name="Prepare Automation" id="mech_auto" value="Y">
                             <label for="">Máy lập trình/Automation</label>
                         </td>
-
                         <td contenteditable="true" rowspan="2"></td>
                     </tr>
                     <tr>
+                         <!-- -------------- Google sheet Colume 21 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Give to technician" id="btn_givetotech"
+                            <input type="checkbox" class="checkbox" name="Adjust machine" id="mech_adjust"
                                 value="Y">
                             <label for="">Chỉnh máy/Adjust machine</label>
                         </td>
+                         <!-- -------------- Google sheet Colume 22 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Give to Mechanic" id="btn_givetomec"
+                            <input type="checkbox" class="checkbox" name="Prepare template" id="mech_template"
                                 value="Y">
                             <label for="">Chuẩn bị rập/Prepare template</label>
                         </td>
@@ -197,57 +217,64 @@
                     <!-- WAREHOUSE------------------------------------------------------------------->
                     <tr>
                         <td scope="row" rowspan="2" class="checkbox"
-                            style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;">
-                            Production/Warehouse
+                            style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;writing-mode: vertical-rl; text-orientation: mixed;">
+                            Pro/WH
                         </td>
+                         <!-- -------------- Google sheet Colume 23 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Pre-line balancing" id="btn_prebal" value="Y">
+                            <input type="checkbox" class="checkbox" name="Check thread" id="pro_thread" value="Y">
                             <label for="">Chỉ/Thread</label>
                         </td>
+                         <!-- -------------- Google sheet Colume 24 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Prepare layout" id="btn_prelayout" value="Y">
+                            <input type="checkbox" class="checkbox" name="Check Acc" id="Pro_acc" value="Y">
                             <label for="">Phụ liệu/Accessory</label>
                         </td>
                         <td contenteditable="true" rowspan="2"></td>
                     </tr>
                     <tr>
+                         <!-- -------------- Google sheet Colume 25 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Give to technician" id="btn_givetotech"
+                            <input type="checkbox" class="checkbox" name="Check input" id="pro_input"
                                 value="Y">
                             <label for="">BTP/Input</label>
                         </td>
+                         <!-- -------------- Google sheet Colume 26 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Give to Mechanic" id="btn_givetomec"
+                            <input type="checkbox" class="checkbox" name="Check Trim" id="pro_trim"
                                 value="Y">
                             <label for="">Bảng màu/Trim card</label>
                         </td>
                     </tr>
-
                     <!-- -------------------------------------------------------- -->
                     <!-- SUPERMARKET & CUTTING ------------------------------------------------------------------->
                     <tr>
                         <td scope="row" rowspan="2" class="checkbox"
                             style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;">
-                            Supermarket, Cutting
+                            Sup/Cut
                         </td>
+                         <!-- -------------- Google sheet Colume 27 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Pre-line balancing" id="btn_prebal" value="Y">
+                            <input type="checkbox" class="checkbox" name="Check printing" id="sup_print" value="Y">
                             <label for="">Kiểm tra hàng in/Check printing panel</label>
                         </td>
+                         <!-- -------------- Google sheet Colume 28 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Prepare layout" id="btn_prelayout" value="Y">
+                            <input type="checkbox" class="checkbox" name="Check laser" id="sup_laser" value="Y">
                             <label for="">Kiểm tra laser/Check laser panel</label>
                         </td>
                         <td contenteditable="true" rowspan="2"></td>
                     </tr>
                     <tr>
+                         <!-- -------------- Google sheet Colume 29 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Give to technician" id="btn_givetotech"
+                            <input type="checkbox" class="checkbox" name="Check emb" id="sup_emb"
                                 value="Y">
                             <label for="">Kiểm tra thêu/Check emb panel</label>
                         </td>
+                         <!-- -------------- Google sheet Colume 30 ---------------------->
                         <td scope="row" colspan="2">
-                            <input type="checkbox" class="checkbox" name="Give to Mechanic" id="btn_givetomec"
+                            <input type="checkbox" class="checkbox" name="Check readyinput" id="sup_input"
                                 value="Y">
                             <label for="">Kiểm tra BTP/Check main, lining panel</label>
                         </td>
@@ -256,20 +283,17 @@
                     <!------------------------ CFA ------------------------------------>
                     <tr>
                         <td scope="row" rowspan="1" class="checkbox"
-                            style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;">QC,
+                            style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;">QC/
                             CFA
                         </td>
+                         <!-- -------------- Google sheet Colume 31 ---------------------->
                         <td scope="row" colspan="4">
-                            <input type="checkbox" class="checkbox" name="Pre-line balancing" id="btn_prebal" value="Y">
+                            <input type="checkbox" class="checkbox" name="PP sample" id="cfa_pps" value="Y">
                             <label for="">Kiểm tra tài liệu, mẫu PP/Cheking docs, PPS</label>
                         </td>
 
                         <td contenteditable="true" rowspan="1"></td>
                     </tr>
-
-
-
-
                 </tbody>
             </table>
 
