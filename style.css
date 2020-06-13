@@ -93,4 +93,7 @@ a{
   .social-icons .social-icon:hover {
     background-color: #bd5d38;
   }
-  
+textarea{
+      width: 100%;
+      height: 100%;      
+  }
