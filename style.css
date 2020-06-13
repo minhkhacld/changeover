@@ -7,9 +7,19 @@ body{
     margin: 0;
     padding: 0;
 }
+#header{
+    border-bottom: 3px solid black;
+}
+#img{
+    width: 70px;
+    height: 70px;  
+    /* display: inline-block; */
+    /* border:1px solid blue */
+}
 h2{
     text-align: center;
     font-weight: bold;
+    /* border:1px solid blue */
 }
 .row{
     /* border: 1px solid yellow;     */
@@ -83,3 +93,4 @@ a{
   .social-icons .social-icon:hover {
     background-color: #bd5d38;
   }
+  
