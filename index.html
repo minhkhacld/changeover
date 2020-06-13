@@ -23,20 +23,20 @@
                     <div class="form-group">
                         <label for="">Line</label>
                         <input type="text" class="form-control" name="Line" id="" aria-describedby="helpId"
-                            placeholder="">
+                            placeholder="" required>
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-group">
                         <label for="">Style</label>
                         <input type="text" class="form-control" name="Style" id="" aria-describedby="helpId"
-                            placeholder="">
+                            placeholder="" required>
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-group">
                         <label for="">Factory</label>
-                        <select class="form-control" name="Factory" id="">
+                        <select class="form-control" name="Factory" id="" required>
                             <option>...</option>
                             <option value="P2">P2</option>
                             <option value="P2">P3</option>
@@ -49,7 +49,7 @@
                     <div class="form-group">
                         <label for="">Date Changeover</label>
                         <input type="date" class="form-control" name="Date" id="" aria-describedby="helpId"
-                            placeholder="">
+                            placeholder="" required>
                     </div>
                 </div>
                 <div class="col">
@@ -67,18 +67,7 @@
                     </div>
                 </div>
             </div>
-            <!-- //Main  -->
-            <!-- <div class="row">
-            <div class="col-xs-sm-3" id="formheader1">
-                Department
-            </div>
-            <div class="col-xs-sm-9">
-                Check List
-            </div>
-            <div class="col-sm-12">
-                Remark
-            </div>
-        </div> -->
+            <!-- Main contain -->
             <table class="table table-bordered">
                 <thead class="thead-dark">
                     <tr>
@@ -91,145 +80,147 @@
                 <tbody>
                     <!-- IE ------------------------------------------------------------------->
                     <tr>
-                        <td scope="row" rowspan="2" class="checkbox"
+                        <td scope="row" rowspan="3" class="checkbox"
                             style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;">IE
                         </td>
-                        <td scope="row" style="height: 150px;">
+                        <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Pre-line balancing" id="btn_prebal" value="Y">
-                            <label for="">Pre-line balancing</label>
-                        </td>
-                        <td scope="row" style="height: 150px;">
+                            <label for="">Cân bằng chuyền/Pre-line balancing</label>
+                        <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Prepare layout" id="btn_prelayout" value="Y">
                             <label for="">Prepare layout</label>
                         </td>
-                        <td scope="row" style="height: 150px;">
-                            <input type="checkbox" class="checkbox" name="Give to technician" id="btn_givetotech"
-                                value="Y">
-                            <label for="">Give to technician</label>
                         </td>
-                        <td scope="row" style="height: 150px;">
-                            <input type="checkbox" class="checkbox" name="Give to Mechanic" id="btn_givetomec"
-                                value="Y">
-                            <label for="">Give to Mechanic</label>
-                        </td>
-                        <td contenteditable="true" rowspan="2"></td>
+                        <td contenteditable="true" rowspan="3"></td>
                     </tr>
                     <tr>
-                        <td scope="row" style="height: 150px;">
+                        <td scope="row" colspan="2">
+                            <input type="checkbox" class="checkbox" name="Give to technician" id="btn_givetotech"
+                                value="Y">
+                            <label for="">Gửi layout cho Kỹ thuật/Give to technician</label>
+                        </td>
+                        <td scope="row" colspan="2">
+                            <input type="checkbox" class="checkbox" name="Give to Mechanic" id="btn_givetomec"
+                                value="Y">
+                            <label for="">Gửi layout cho Bảo trì/Give to Mechanic</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="4">
                             <input type="checkbox" class="checkbox" name="Give to Leader" id="btn_givetolead" value="Y">
-                            <label for="">Give to Leader</label>
+                            <label for="">Gửi layout cho Tổ trưởng/Give to Leader</label>
                         </td>
-                        <td scope="row" style="height: 150px;">
-                            <!-- <input type="checkbox" name="" id="btn_prelayout" value="Y">
-                            <label for="">Pre-line balancing</label> -->
-                        </td>
-                        <td scope="row" style="height: 150px;">
-                            <!-- <input type="checkbox" name="" id="btn_prelayout" value="Y">
-                            <label for="">Pre-line balancing</label> -->
-                        </td>
-                        <td scope="row" style="height: 150px;">
-                            <!-- <input type="checkbox" name="" id="btn_prelayout" value="Y">
-                            <label for="">Pre-line balancing</label> -->
-                        </td>
+
                     </tr>
                     <!-- -------------------------------------------------------- -->
                     <!-- TECHNICAL ------------------------------------------------------------------->
                     <tr>
-                        <td scope="row" rowspan="2" class="checkbox"
+                        <td scope="row" rowspan="4" class="checkbox"
                             style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;">
-                            TECHNCAL
+                            Technical
                         </td>
-                        <td scope="row" style="height: 150px;">
+                        <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Pre-line balancing" id="btn_prebal" value="Y">
-                            <label for="">Pre-line balancing</label>
+                            <label for="">Lab</label>
                         </td>
-                        <td scope="row" style="height: 150px;">
+                        <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Prepare layout" id="btn_prelayout" value="Y">
-                            <label for="">Prepare layout</label>
+                            <label for="">PP meeting</label>
                         </td>
-                        <td scope="row" style="height: 150px;">
-                            <input type="checkbox" class="checkbox" name="Give to technician" id="btn_givetotech"
-                                value="Y">
-                            <label for="">Give to technician</label>
-                        </td>
-                        <td scope="row" style="height: 150px;">
-                            <input type="checkbox" class="checkbox" name="Give to Mechanic" id="btn_givetomec"
-                                value="Y">
-                            <label for="">Give to Mechanic</label>
-                        </td>
-                        <td contenteditable="true" rowspan="2"></td>
+
+                        <td contenteditable="true" rowspan="4"></td>
                     </tr>
                     <tr>
-                        <td scope="row" style="height: 150px;">
-                            <input type="checkbox" class="checkbox" name="Give to Leader" id="btn_givetolead" value="Y">
-                            <label for="">Give to Leader</label>
+                        <td scope="row" colspan="2">
+                            <input type="checkbox" class="checkbox" name="Give to technician" id="btn_givetotech"
+                                value="Y">
+                            <label for="">Mẫu kỹ thuật/Technical sample</label>
                         </td>
-                        <td scope="row" style="height: 150px;">
-                            <!-- <input type="checkbox" name="" id="btn_prelayout" value="Y">
-        <label for="">Pre-line balancing</label> -->
-                        </td>
-                        <td scope="row" style="height: 150px;">
-                            <!-- <input type="checkbox" name="" id="btn_prelayout" value="Y">
-        <label for="">Pre-line balancing</label> -->
-                        </td>
-                        <td scope="row" style="height: 150px;">
-                            <!-- <input type="checkbox" name="" id="btn_prelayout" value="Y">
-        <label for="">Pre-line balancing</label> -->
+                        <td scope="row" colspan="2">
+                            <input type="checkbox" class="checkbox" name="Give to Mechanic" id="btn_givetomec"
+                                value="Y">
+                            <label for="">Rập giấy/Prepare paper template</label>
                         </td>
                     </tr>
+                    <tr>
+                        <td scope="row" colspan="2">
+                            <input type="checkbox" class="checkbox" name="Give to Leader" id="btn_givetolead" value="Y">
+                            <label for="">Rập mica/Plastic template</label>
+                        </td>
+                        <td scope="row" colspan="2">
+                            <input type="checkbox" class="checkbox" name="Give to Leader" id="btn_givetolead" value="Y">
+                            <label for="">Tài liệu kỹ thuật</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="2">
+                            <input type="checkbox" class="checkbox" name="Give to Leader" id="btn_givetolead" value="Y">
+                            <label for="">Đào tạo công nhân công đoạn khó/Traning for critial operation</label>
+                        </td>
+                        <td scope="row" colspan="2">
+                            <input type="checkbox" class="checkbox" name="Give to Leader" id="btn_givetolead" value="Y">
+                            <label for="">CN may hàng cũ/Sewers sew old style</label>
+                        </td>
+                    </tr>
+
                     <!-- -------------------------------------------------------- -->
                     <!-- MECHANIC------------------------------------------------------------------->
                     <tr>
-                        <td scope="row" rowspan="1" class="checkbox"
+                        <td scope="row" rowspan="2" class="checkbox"
                             style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;">
-                            MECHANIC
+                            Mechanic
                         </td>
-                        <td scope="row" style="height: 150px;">
+                        <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Pre-line balancing" id="btn_prebal" value="Y">
-                            <label for="">Pre-line balancing</label>
+                            <label for="">Máy đặc biệt/Special Machine</label>
                         </td>
-                        <td scope="row" style="height: 150px;">
+                        <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Prepare layout" id="btn_prelayout" value="Y">
-                            <label for="">Prepare layout</label>
+                            <label for="">Máy lập trình/Automation</label>
                         </td>
-                        <td scope="row" style="height: 150px;">
+
+                        <td contenteditable="true" rowspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Give to technician" id="btn_givetotech"
                                 value="Y">
-                            <label for="">Give to technician</label>
+                            <label for="">Chỉnh máy/Adjust machine</label>
                         </td>
-                        <td scope="row" style="height: 150px;">
+                        <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Give to Mechanic" id="btn_givetomec"
                                 value="Y">
-                            <label for="">Give to Mechanic</label>
+                            <label for="">Chuẩn bị rập/Prepare template</label>
                         </td>
-                        <td contenteditable="true" rowspan="1"></td>
                     </tr>
                     <!-- -------------------------------------------------------- -->
                     <!-- WAREHOUSE------------------------------------------------------------------->
                     <tr>
-                        <td scope="row" rowspan="1" class="checkbox"
+                        <td scope="row" rowspan="2" class="checkbox"
                             style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;">
-                            WAREHOUSE
+                            Production/Warehouse
                         </td>
-                        <td scope="row" style="height: 150px;">
+                        <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Pre-line balancing" id="btn_prebal" value="Y">
-                            <label for="">Pre-line balancing</label>
+                            <label for="">Chỉ/Thread</label>
                         </td>
-                        <td scope="row" style="height: 150px;">
+                        <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Prepare layout" id="btn_prelayout" value="Y">
-                            <label for="">Prepare layout</label>
+                            <label for="">Phụ liệu/Accessory</label>
                         </td>
-                        <td scope="row" style="height: 150px;">
+                        <td contenteditable="true" rowspan="2"></td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Give to technician" id="btn_givetotech"
                                 value="Y">
-                            <label for="">Give to technician</label>
+                            <label for="">BTP/Input</label>
                         </td>
-                        <td scope="row" style="height: 150px;">
+                        <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Give to Mechanic" id="btn_givetomec"
                                 value="Y">
-                            <label for="">Give to Mechanic</label>
+                            <label for="">Bảng màu/Trim card</label>
                         </td>
-                        <td contenteditable="true" rowspan="1"></td>
                     </tr>
 
                     <!-- -------------------------------------------------------- -->
@@ -237,44 +228,28 @@
                     <tr>
                         <td scope="row" rowspan="2" class="checkbox"
                             style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;">
-                            SUPERMARKET & CUTTING
+                            Supermarket, Cutting
                         </td>
-                        <td scope="row" style="height: 150px;">
+                        <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Pre-line balancing" id="btn_prebal" value="Y">
-                            <label for="">Pre-line balancing</label>
+                            <label for="">Kiểm tra hàng in/Check printing panel</label>
                         </td>
-                        <td scope="row" style="height: 150px;">
+                        <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Prepare layout" id="btn_prelayout" value="Y">
-                            <label for="">Prepare layout</label>
-                        </td>
-                        <td scope="row" style="height: 150px;">
-                            <input type="checkbox" class="checkbox" name="Give to technician" id="btn_givetotech"
-                                value="Y">
-                            <label for="">Give to technician</label>
-                        </td>
-                        <td scope="row" style="height: 150px;">
-                            <input type="checkbox" class="checkbox" name="Give to Mechanic" id="btn_givetomec"
-                                value="Y">
-                            <label for="">Give to Mechanic</label>
+                            <label for="">Kiểm tra laser/Check laser panel</label>
                         </td>
                         <td contenteditable="true" rowspan="2"></td>
                     </tr>
                     <tr>
-                        <td scope="row" style="height: 150px;">
-                            <input type="checkbox" class="checkbox" name="Give to Leader" id="btn_givetolead" value="Y">
-                            <label for="">Give to Leader</label>
+                        <td scope="row" colspan="2">
+                            <input type="checkbox" class="checkbox" name="Give to technician" id="btn_givetotech"
+                                value="Y">
+                            <label for="">Kiểm tra thêu/Check emb panel</label>
                         </td>
-                        <td scope="row" style="height: 150px;">
-                            <!-- <input type="checkbox" name="" id="btn_prelayout" value="Y">
-                            <label for="">Pre-line balancing</label> -->
-                        </td>
-                        <td scope="row" style="height: 150px;">
-                            <!-- <input type="checkbox" name="" id="btn_prelayout" value="Y">
-                            <label for="">Pre-line balancing</label> -->
-                        </td>
-                        <td scope="row" style="height: 150px;">
-                            <!-- <input type="checkbox" name="" id="btn_prelayout" value="Y">
-                            <label for="">Pre-line balancing</label> -->
+                        <td scope="row" colspan="2">
+                            <input type="checkbox" class="checkbox" name="Give to Mechanic" id="btn_givetomec"
+                                value="Y">
+                            <label for="">Kiểm tra BTP/Check main, lining panel</label>
                         </td>
                     </tr>
                     <!-- -------------------------------------------------------- -->
@@ -284,14 +259,11 @@
                             style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;">QC,
                             CFA
                         </td>
-                        <td scope="row" colspan="2" style="height: 150px;">
+                        <td scope="row" colspan="4">
                             <input type="checkbox" class="checkbox" name="Pre-line balancing" id="btn_prebal" value="Y">
                             <label for="">Kiểm tra tài liệu, mẫu PP/Cheking docs, PPS</label>
                         </td>
-                        <td scope="row" style="height: 150px;">
-                        </td>
-                        <td scope="row" style="height: 150px;">
-                        </td>
+
                         <td contenteditable="true" rowspan="1"></td>
                     </tr>
 
