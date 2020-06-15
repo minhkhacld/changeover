@@ -231,7 +231,7 @@
                     <!-- -------------------------------------------------------- -->
                     <!-- WAREHOUSE------------------------------------------------------------------->
                     <tr>
-                        <td scope="row" rowspan="2" class="checkbox"
+                        <td scope="row" rowspan="3" class="checkbox"
                             style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;writing-mode: vertical-rl; text-orientation: mixed;">
                             Pro/WH
                         </td>
@@ -239,14 +239,14 @@
                         <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Check thread" id="pro_thread" value="Y">
                             <label for="">Chỉ/Thread</label>
-                        </td>
+                        </td>                        
                         <!-- -------------- Google sheet Colume 24 ---------------------->
                         <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Check Acc" id="Pro_acc" value="Y">
                             <label for="">Phụ liệu/Accessory</label>
                         </td>
-                        <td contenteditable="false" rowspan="2">
-                            <textarea name="Pro/WH remark" id="" cols="48" rows="10"></textarea>
+                        <td contenteditable="false" rowspan="3">
+                            <textarea name="Pro/WH remark" id="" cols="48" rows="12"></textarea>
                         </td>
                     </tr>
                     <tr>
@@ -259,6 +259,12 @@
                         <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Check Trim" id="pro_trim" value="Y">
                             <label for="">Bảng màu/Trim card</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td scope="row" colspan="4">
+                            <input type="checkbox" class="checkbox" name="Check bobbin" id="" value="Y">
+                            <label for="">Thuyền suốt/Bobbin case</label>
                         </td>
                     </tr>
                     <!-- -------------------------------------------------------- -->
@@ -302,9 +308,13 @@
                             CFA
                         </td>
                         <!-- -------------- Google sheet Colume 31 ---------------------->
-                        <td scope="row" colspan="4">
-                            <input type="checkbox" class="checkbox" name="PP sample" id="cfa_pps" value="Y">
-                            <label for="">Kiểm tra tài liệu, mẫu PP/Cheking docs, PPS</label>
+                        <td scope="row" colspan="2">
+                            <input type="checkbox" class="checkbox" name="PP sample" id="" value="Y">
+                            <label for="">Kiểm tra mẫu PP/Check PPS</label>
+                        </td>
+                        <td scope="row" colspan="2">
+                            <input type="checkbox" class="checkbox" name="Document" id="" value="Y">
+                            <label for="">Kiểm tra tài liệu/Check document</label>
                         </td>
                         <td contenteditable="false" rowspan="1">
                             <textarea name="QC/CFA Remark" id="" cols="15" rows="4"></textarea>
@@ -315,9 +325,13 @@
                             style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;">LAB
                         </td>
                         <!-- -------------- Google sheet Colume 31 ---------------------->
-                        <td scope="row" colspan="4">
-                            <input type="checkbox" class="checkbox" name="Lab" id="clab" value="Y">
-                            <label for="">Kiểm tra lực kéo nút/Check button tension</label>
+                        <td scope="row" colspan="2">
+                            <input type="checkbox" class="checkbox" name="Check tension" id="" value="Y">
+                            <label for="">Kiểm tra lực kéo/Check tension</label>
+                        </td>
+                        <td scope="row" colspan="2">
+                            <input type="checkbox" class="checkbox" name="Check shinkage" id="" value="Y">
+                            <label for="">Kiểm tra co rút/Check shinkage</label>
                         </td>
                         <td contenteditable="false" rowspan="1">
                             <textarea name="Lab Remark" id="" cols="15" rows="4"></textarea>
