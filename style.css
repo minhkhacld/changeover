@@ -1,25 +1,32 @@
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-.container{
+    box-sizing: border-box; 
+    }
+    .container{
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 #header{
     border-bottom: 3px solid black;
-}
+    align-items: center;
+    color: #00bfff;
+    
+    
+    }
 #img{
     width: 70px;
     height: 70px;  
-    /* display: inline-block; */
-    /* border:1px solid blue */
+    display: inline-block; 
+    /* border:1px solid blue  */
 }
 h2{
     text-align: center;
+    font-weight: bold;    
     font-weight: bold;
+    font-size: 50px !important;
     /* border:1px solid blue */
+    
 }
 .row{
     /* border: 1px solid yellow;     */
@@ -35,6 +42,7 @@ table {
     margin: 0;
     padding: 0;  
 }
+
 table .thead-dark{
     text-align: center;
     margin: 0;
@@ -56,11 +64,12 @@ input{
     height: 50px;
     display: block;
     text-align: center;
-    background-color: #4287f5;
+    background-color: #00bfff;
     margin: 0 auto;
     border: none;
     font-size: 20px;
     font-weight: bold;
+    color: white;
 }
 #btn:hover{
     background-color: tomato;
@@ -82,7 +91,7 @@ a{
     justify-content: center;
     height: 3.5rem;
     width: 3.5rem;
-    background-color: #495057;
+    background-color: #00bfff;
     color: #fff;
     border-radius: 100%;
     font-size: 1.5rem;
@@ -95,7 +104,7 @@ a{
     margin-right: 0;
   } */
   .social-icons .social-icon:hover {
-    background-color: #bd5d38;
+    background-color: tomato;
   }
 textarea{
       width: 100%;
