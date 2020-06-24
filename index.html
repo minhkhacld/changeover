@@ -18,7 +18,7 @@
 <body>
     <div class="container">
         <form action="https://script.google.com/macros/s/AKfycbxsURpt1GP4YDNnfv_ot4BXF1t1B6OezlJHehBGqA7OA2UCUaM/exec"
-            method="get">
+            method="get" id="test-form">
             <div class="row" id="header">
                 <div class="col-1">
                     <img src="./picture/PG logo.png" id="img" alt="PG logo">
@@ -138,26 +138,20 @@
                     <!-- -------------------------------------------------------- -->
                     <!-- TECHNICAL ------------------------------------------------------------------->
                     <tr>
-                        <td scope="row" rowspan="4" class="checkbox"
+                        <td scope="row" rowspan="3" class="checkbox"
                             style="text-align: center; vertical-align: middle; font-size: 13px; font-weight: bold;">
                             Tech
                         </td>
                         <!-- -------------- Google sheet Colume 11 ---------------------->
-                        <td scope="row" colspan="2">
+                        <!-- <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Lab" id="tech_lab" value="Y">
                             <label for="">Lab</label>
                         </td>
-                        <!-- -------------- Google sheet Colume 12 ---------------------->
-                        <td scope="row" colspan="2">
+                        <!- -------------- Google sheet Colume 12 ---------------------->
+                        <!-- <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="PP meeting" id="tech_ppm" value="Y">
                             <label for="">PP meeting</label>
-                        </td>
-                        <td contenteditable="false" rowspan="4">
-                            <textarea name="Tech Remark" id="" cols="48" rows="25"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <!-- -------------- Google sheet Colume 13 ---------------------->
+                        </td> -->
                         <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Tech sample" id="tech_sample" value="Y">
                             <label for="">Mẫu kỹ thuật/Technical sample</label>
@@ -168,7 +162,23 @@
                                 value="Y">
                             <label for="">Rập giấy/Prepare paper template</label>
                         </td>
+                        <td contenteditable="false" rowspan="3">
+                            <textarea name="Tech Remark" id="" cols="48" rows="25"></textarea>
+                        </td>
                     </tr>
+                    <!-- <tr> -->
+                    <!-- -------------- Google sheet Colume 13 ---------------------->
+                    <!-- <td scope="row" colspan="2">
+                            <input type="checkbox" class="checkbox" name="Tech sample" id="tech_sample" value="Y">
+                            <label for="">Mẫu kỹ thuật/Technical sample</label>
+                        </td> -->
+                    <!-- -------------- Google sheet Colume 14 ---------------------->
+                    <!-- <td scope="row" colspan="2">
+                            <input type="checkbox" class="checkbox" name="Paper template" id="tech_papertemplate"
+                                value="Y">
+                            <label for="">Rập giấy/Prepare paper template</label>
+                        </td> -->
+                    <!-- </tr> -->
                     <tr>
                         <!-- -------------- Google sheet Colume 15 ---------------------->
                         <td scope="row" colspan="2">
@@ -239,7 +249,7 @@
                         <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Check thread" id="pro_thread" value="Y">
                             <label for="">Chỉ/Thread</label>
-                        </td>                        
+                        </td>
                         <!-- -------------- Google sheet Colume 24 ---------------------->
                         <td scope="row" colspan="2">
                             <input type="checkbox" class="checkbox" name="Check Acc" id="Pro_acc" value="Y">
@@ -376,8 +386,25 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+
+            var $form = $('form#test-form'),
+                url = 'https://script.google.com/macros/s/AKfycbxsURpt1GP4YDNnfv_ot4BXF1t1B6OezlJHehBGqA7OA2UCUaM/exec'
+
+            $('#btn').on('click', function (e) {
+                e.preventDefault();
+                var jqxhr = $.ajax({
+                    url: url,
+                    method: "GET",
+                    dataType: "json",
+                    data: $form.serializeObject()
+                }).success(
+                    // do something
+                );
+            })
+
+
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -385,7 +412,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script>
-      
+
     </script>
 </body>
 
