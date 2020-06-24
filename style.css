@@ -24,7 +24,7 @@ h2{
     text-align: center;
     font-weight: bold;    
     font-weight: bold;
-    font-size: 30px;
+    font-size: 30px !important;
     /* border:1px solid blue */
     
 }
@@ -110,7 +110,7 @@ textarea{
       width: 100%;
       height: 100%;      
   }
-  #footer{
-      text-align: center;
-      font-weight: bold;
+#footer{
+      text-align: center !important;
+      font-weight: bold !important;
   }
